@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An inventory system page that showcases products with accessibility and SEO best practices.">
+    <title>Inventory System</title>
+</head>
+<body>
+    <header>
+        <h1>Inventory Management System</h1>
+        <p>Your one-stop solution for managing inventory efficiently.</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Inventory List</a></li>
+            <li><a href="#">Add New Item</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section aria-labelledby="inventory-heading">
+            <h2 id="inventory-heading">Current Inventory</h2>
+            <ul>
+                <li>
+                    <h3>Item Name 1</h3>
+                    <p>Description of Item 1.</p>
+                    <p>Quantity: 10</p>
+                </li>
+                <li>
+                    <h3>Item Name 2</h3>
+                    <p>Description of Item 2.</p>
+                    <p>Quantity: 5</p>
+                </li>
+                <li>
+                    <h3>Item Name 3</h3>
+                    <p>Description of Item 3.</p>
+                    <p>Quantity: 20</p>
+                </li>
+            </ul>
+        </section>
+        <section aria-labelledby="add-item-heading">
+            <h2 id="add-item-heading">Add New Item</h2>
+            <form action="#" method="post" aria-label="Add new inventory item">
+                <label for="item-name">Item Name:</label>
+                <input type="text" name="item-name" required>
+                
+                <label for="item-description">Description:</label>
+                <textarea name="item-description" required></textarea>
+                
+                <label for="item-quantity">Quantity:</label>
+                <input type="number" name="item-quantity" required>
+                
+                <button type="submit">Add Item</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Inventory System. All rights reserved.</p>
+        <p><a href="#">Contact Us</a></p>
+    </footer>
+</body>
+</html>
